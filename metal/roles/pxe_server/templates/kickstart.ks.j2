@@ -30,6 +30,8 @@ services --enabled="chronyd"
 # System timezone
 timezone {{ timezone }} --isUtc
 
+rootpw --iscrypted $6$THXjLBmjr3ZAJEMH$R7jp7Bv1kqrzayMMtF1gvIc1Hs65uKA685KRYCOP2tT21IyQ/TYbzGEmKGIsWGCTklfL6jRY1zC9k7ZqvqHA61
+
 # Create user (locked by default)
 user --groups=wheel --name=admin
 # Add SSH key
